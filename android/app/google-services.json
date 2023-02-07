@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "787241642466",
+    "project_id": "election-voting-app-f9af4",
+    "storage_bucket": "election-voting-app-f9af4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787241642466:android:31aeb6bacac55c0d2831bb",
+        "android_client_info": {
+          "package_name": "com.electionvoting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787241642466-0jm8l1s7cvjaegbamd4uenlekgqrja68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADZA3UnqG3tfCCask2XgbfI9pPXnH5KDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787241642466-0jm8l1s7cvjaegbamd4uenlekgqrja68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
