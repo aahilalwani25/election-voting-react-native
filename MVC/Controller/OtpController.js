@@ -36,18 +36,27 @@ export class OtpController{
     //confir code in OTP controller
     async confirmCode(codeInput){
 
-        if (this.cr && codeInput.length) {
-        this.cr
+        try{
+            if (this.cr && codeInput.length>0) {
+                this.cr
             .confirm(codeInput)
-            .then((user) => {
-                if(user){
-                    this.otp.confirmResult=true;
-                }
-            })
-            .catch(error =>
-                this.otp.confirmResult=false
-            );
+            this.otp.confirmResult=true;
         }
+        }catch(error){
+            this.otp.confirmResult=false;
+        }
+        // if (this.cr && codeInput.length>0) {
+        // this.cr
+        //     .confirm(codeInput)
+        //     .then((user) => {
+        //         if(user){
+        //             this.otp.confirmResult=true;
+        //         }
+        //     })
+        //     .catch(error =>
+        //         this.otp.confirmResult=false
+        //     );
+        // }
 
         if(this.otp.confirmResult){
             return true;
