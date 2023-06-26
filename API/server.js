@@ -90,6 +90,7 @@ app.get('/api/voting/:cnic',(req,res)=>{
     );
 });
 
+//for submitting a vote
 app.post('/api/submitVote/',(req,res)=>{
   const {cnic,party}=req.body;
   con.query(
@@ -101,6 +102,8 @@ app.post('/api/submitVote/',(req,res)=>{
   );
 })
 
+
+//get total votes for each party 
 app.get('/api/countVotes/:party',(req,res)=>{
   const {party}=req.params;
 

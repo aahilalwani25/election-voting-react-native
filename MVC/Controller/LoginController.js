@@ -1,9 +1,9 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
+//const axios = require('axios');
 const ip = require('../../API/NetworkConfig');
 
 export class LoginController {
-
 
   async getLogin(cnic, password) {
     let request = await axios.get(`http://${ip.address}:3000/api/users/${cnic}/${password}`);
@@ -26,7 +26,7 @@ export class LoginController {
           if(err) console.log(err);
         });
         console.log(phone);
-       // this.getPhone(cnic);
+        //this.getPhone(cnic);
         AsyncStorage.setItem('ph', phone.toString(), err => {
           if (err) console.log(err);
         });

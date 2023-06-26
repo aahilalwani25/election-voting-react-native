@@ -21,6 +21,7 @@ export class SignUpController {
     return age_now;
   }
 
+  //check if cnic is already reigistered or not
   async getCNIC(cnic) {
     //axios post
     let request = await axios.get(
@@ -44,6 +45,7 @@ export class SignUpController {
     return check;
   }
 
+  //check if phone is already reigistered or not
   async getPhone(phone) {
     //axios post
     let request = await axios.get(
